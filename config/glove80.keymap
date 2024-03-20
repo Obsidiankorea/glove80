@@ -40,6 +40,28 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
+
+        pht_right_shift1: pht_right_shift1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PHT_RIGHT_SHIFT1";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <59 60 61 43 42 41 29 30 31 77 76 75>;
+        };
+
+        Pht_Numberlayer: Pht_Numberlayer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PHT_NUMBERLAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            retro-tap;
+            hold-trigger-key-positions = <75 76 77 61 60 59 41 42 43 31 30 29>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -133,12 +155,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1            &kp F2    &kp F3   &kp F4    &kp F5                                                                                      &kp F6    &kp F7        &kp F8    &kp F9     &kp F10
-&kp GRAVE         &kp N1    &kp N2   &kp N3    &kp N4     &kp N5                                                                   &kp N6  &kp N7    &kp N8        &kp N9    &kp N0     &kp MINUS
-&kp TAB           &kp Q     &kp W    &kp E     &kp R      &kp T                                                                    &kp Y   &kp U     &kp I         &kp O     &kp P      &kp BSLH
-&mt LCTRL ESCAPE  &kp A     &kp S    &kp D     &kp F      &kp G                                                                    &kp H   &kp J     &kp K         &kp L     &kp SEMI   &kp SQT
-&kp LEFT_SHIFT    &kp Z     &kp X    &kp C     &kp V      &kp B   &kp LSHFT  &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT  &kp B   &kp N     &kp M         &kp P     &kp COMMA  &kp RSHFT
-&magic MAGIC 0    &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &kp LALT   &kp RALT  &kp RET    &kp SPACE          &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
+&kp F1            &kp F2    &kp F3   &kp F4        &kp F5                                                                                                        &kp F6    &kp F7        &kp F8    &kp F9                         &kp F10
+&kp GRAVE         &kp N1    &kp N2   &kp N3        &kp N4        &kp N5                                                                                  &kp N6  &kp N7    &kp N8        &kp N9    &kp N0                         &kp MINUS
+&kp TAB           &kp Q     &kp W    &kp E         &kp R         &kp T                                                                                   &kp Y   &kp U     &kp I         &kp O     &kp P                          &kp BSLH
+&mt LCTRL ESCAPE  &kp A     &kp S    &kp D         &kp F         &kp G                                                                                   &kp H   &kp J     &kp K         &kp L     &kp SEMI                       &kp SQT
+&kp LEFT_SHIFT    &kp Z     &kp X    &kp C         &kp V         &kp B   &kp LSHFT  &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT                 &kp B   &kp N     &kp M         &kp P     &pht_right_shift1 RSHFT COMMA  &kp RSHFT
+&magic MAGIC 0    &kp HOME  &kp END  &kp LEFT_GUI  &kp LEFT_ALT          &kp BSPC   &kp DEL    &kp LALT   &kp RALT  &kp RET    &Pht_Numberlayer 1 SPACE          &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT                      &kp PG_DN
             >;
         };
 
