@@ -48,8 +48,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <59 60 61 43 42 41 29 30 31 77 76 75>;
+            flavor = "hold-preferred";
+            hold-trigger-key-positions = <59 60 61 43 42 41 29 30 31 77 76 75 62 63 45 44 28 40 58 16 17 19 18 74 73 57 56>;
         };
 
         Pht_Numberlayer: Pht_Numberlayer {
@@ -162,12 +162,12 @@
 
         r_minus {
             bindings = <&kp MINUS>;
-            key-positions = <59 42>;
+            key-positions = <41 58>;
         };
 
         r_ng {
             bindings = <&right_nj>;
-            key-positions = <58 41>;
+            key-positions = <42 59>;
         };
 
         usb_toggle {
@@ -280,7 +280,7 @@
 &kp GRAVE         &kp N1                        &kp N2     &kp N3              &kp N4        &kp N5                                                                                  &kp N6  &kp N7    &kp N8        &kp N9    &kp N0                         &kp MINUS
 &kp TAB           &kp Q                         &kp W      &kp E               &kp R         &kp T                                                                                   &kp Y   &kp U     &kp I         &kp O     &kp P                          &kp BSLH
 &mt LCTRL ESCAPE  &kp A                         &kp S      &kp D               &kp F         &kp G                                                                                   &kp H   &kp J     &kp K         &kp L     &pht_right_semicolon 4 SEMI    &kp SQT
-&kp LEFT_SHIFT    &Pht_left_shift LEFT_SHIFT Z  &kp X      &kp C               &kp V         &kp B   &kp LSHFT  &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT                 &kp B   &kp N     &kp M         &kp P     &pht_right_shift1 RSHFT COMMA  &kp RSHFT
+&kp LEFT_SHIFT    &Pht_left_shift LEFT_SHIFT Z  &kp X      &kp C               &kp V         &kp B   &kp LSHFT  &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT                 &kp B   &kp N     &kp M         &kp P     &pht_right_shift1 RSHFT COMMA  &mt RIGHT_SHIFT SLASH
 &magic MAGIC 0    &kp HOME                      &kp LCTRL  &mt LEFT_WIN RCTRL  &kp LEFT_ALT          &kp BSPC   &kp DEL    &kp LALT   &kp RALT  &kp RET    &Pht_Numberlayer 1 SPACE          &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT                      &kp PG_DN
             >;
         };
