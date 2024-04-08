@@ -157,7 +157,7 @@
 
         requal {
             bindings = <&kp EQUAL>;
-            key-positions = <30 41>;
+            key-positions = <29 40>;
         };
 
         r_minus {
@@ -260,6 +260,31 @@
         rightp {
             bindings = <&kp SLASH>;
             key-positions = <30 40>;
+        };
+
+        right_n {
+            bindings = <&kp N>;
+            key-positions = <38 39>;
+        };
+
+        right_m {
+            bindings = <&kp M>;
+            key-positions = <51 50>;
+        };
+
+        rightcrw {
+            bindings = <&kp LG(LA(LEFT_CONTROL))>;
+            key-positions = <58 59>;
+        };
+
+        right_ctrlalt {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <41 43>;
+        };
+
+        ahffk {
+            bindings = <&kp SQT>;
+            key-positions = <60 41>;
         };
     };
 
