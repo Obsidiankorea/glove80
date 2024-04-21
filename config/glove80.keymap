@@ -80,10 +80,10 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            hold-trigger-key-positions = <44 43 42 30 31 41>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <44 43 42 30 31 41 32 20 19 18 17 29>;
             flavor = "tap-preferred";
-            quick-tap-ms = <200>;
+            quick-tap-ms = <50>;
         };
 
         new_behavior: new_behavior {
