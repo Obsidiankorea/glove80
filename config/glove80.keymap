@@ -380,12 +380,12 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans             &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans             &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp QUESTION           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans             &kp LESS_THAN         &kp LS(GREATER_THAN)   &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans             &trans                &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                             &trans            &trans                &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans             &kp AMPERSAND     &kp ASTRK             &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp CARET          &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp COLON             &kp QUESTION           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans             &kp PERCENT       &kp HASH              &kp LS(AT_SIGN)        &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans                     &trans            &trans                &trans                 &trans  &trans
             >;
         };
     };
