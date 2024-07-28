@@ -285,7 +285,7 @@
 
         rightp {
             bindings = <&kp SLASH>;
-            key-positions = <30 40>;
+            key-positions = <30 41>;
         };
 
         right_n {
