@@ -366,6 +366,11 @@
             bindings = <&kp LC(V)>;
             key-positions = <37 50>;
         };
+
+        ctrlx {
+            bindings = <&kp LC(X)>;
+            key-positions = <26 13>;
+        };
     };
 
     keymap {
