@@ -337,8 +337,8 @@
             key-positions = <9 8>;
         };
 
-        click {
-            bindings = <&mkp LCLK>;
+        ctrlc {
+            bindings = <&kp LC(C)>;
             key-positions = <38 25>;
         };
 
@@ -360,6 +360,11 @@
         ctrlalt_ {
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <66 68>;
+        };
+
+        ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <37 50>;
         };
     };
 
