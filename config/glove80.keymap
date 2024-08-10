@@ -50,7 +50,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            hold-trigger-key-positions = <59 60 61 43 42 41 29 30 31 77 76 75 62 63 45 44 28 40 58 16 17 19 18 74 73 57 56 11 12 13 14 23 24 25 26 35 36 37 38 48 49 50 39 15 27 51 50 51 52 53 69 70 71 10>;
+            hold-trigger-key-positions = <59 60 61 43 42 41 29 30 31 77 76 75 62 63 45 44 28 40 58 16 17 19 18 74 73 57 56 11 12 13 14 23 24 25 26 35 36 37 38 48 49 50 39 15 27 51 50 51 52 53 69 70 71 10 46>;
         };
 
         Pht_Numberlayer: Pht_Numberlayer {
@@ -70,7 +70,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <48 49 50 38 37 36 24 25 26 14 13 12 51 39 27 15 69 52 53 70 16 17 18 19 20 28 29 30 31 32 40 41 42 43 44 58 59 60 61 62>;
+            hold-trigger-key-positions = <48 49 50 38 37 36 24 25 26 14 13 12 51 39 27 15 69 52 53 70 16 17 18 19 20 28 29 30 31 32 40 41 42 43 44 58 59 60 61 62 46>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -411,6 +411,11 @@
             bindings = <&bootloader>;
             key-positions = <5 16>;
         };
+
+        r_ctrlalt {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <58 59>;
+        };
     };
 
     keymap {
@@ -426,18 +431,18 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp GRAVE             &kp NUMBER_6                  &kp N7     &kp N8              &kp N9                                                                                                                                                   &kp F6    &kp F7        &kp F8    &kp F9                         &kp F10
+&kp GRAVE             &kp NUMBER_6                  &kp N7     &kp N8              &kp N9                                                                                                                                                   &kp F6    &tog 1        &kp F8    &kp F9                         &kp F10
 &kp N0                &kp N1                        &kp N2     &x_3                &kp N4        &kp N5                                                                                                                             &kp N6  &kp N7    &kp N8        &kp N9    &kp N0                         &kp EQUAL
-&kp TAB               &kp X                         &kp W      &kp E               &kp R         &kp V                                                                                                                              &kp Y   &kp U     &kp I         &kp O     &kp SEMICOLON                  &tog 1
-&mt LCTRL ESCAPE      &kp A                         &kp S      &kp D               &kp F         &kp G                                                                                                                              &kp H   &kp J     &kp K         &kp L     &pht_right_semicolon 3 PERIOD  &kp PAGE_DOWN
-&mt LEFT_SHIFT GRAVE  &Pht_left_shift LEFT_SHIFT Z  &kp Q      &kp C               &kp T         &kp X   &mt LS(LA(LCTRL)) DELETE                  &kp RWIN  &out OUT_USB  &kp RWIN  &kp PG_UP            &kp PG_DN                 &kp B   &kp N     &kp M         &kp P     &pht_right_shift1 RSHFT COMMA  &mt RIGHT_SHIFT HOME
+&kp TAB               &kp X                         &kp W      &kp E               &kp R         &kp V                                                                                                                              &kp Y   &kp U     &kp I         &kp O     &kp SEMICOLON                  &kp B
+&mt LCTRL ESCAPE      &kp A                         &kp S      &kp D               &kp F         &kp G                                                                                                                              &kp H   &kp J     &kp K         &kp L     &pht_right_semicolon 3 PERIOD  &kp HOME
+&mt LEFT_SHIFT GRAVE  &Pht_left_shift LEFT_SHIFT Z  &kp Q      &kp C               &kp T         &kp X   &mt LS(LA(LCTRL)) DELETE                  &kp RWIN  &out OUT_USB  &kp RWIN  &kp PG_UP            &kp PG_DN                 &kp B   &kp N     &kp M         &kp P     &pht_right_shift1 RSHFT COMMA  &mt RIGHT_SHIFT END
 &tapdance1            &kp UNDERSCORE                &kp LCTRL  &mt LEFT_WIN RCTRL  &kp LEFT_ALT          &left_backspace LA(LEFT_SHIFT) BACKSPACE  &mkp MB1  &mkp RCLK     &kp RALT  &rightenter 4 ENTER  &Pht_Numberlayer 1 SPACE          &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT                      &magic 2 0
             >;
         };
 
         lower_layer {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                     &kp C_MUTE        &kp C_VOL_DN  &kp C_VOL_UP       &none            &kp PAUSE_BREAK
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                     &kp C_MUTE        &trans        &kp C_VOL_UP       &none            &kp PAUSE_BREAK
 &trans        &trans        &trans      &trans      &none     &trans                                                  &kp LPAR   &kp KP_NUM        &kp EQUAL     &kp SLASH          &kp KP_MULTIPLY  &kp PSCRN
 &trans        &trans        &trans      &trans      &trans    &trans                                                  &kp RPAR   &kp N7            &kp N8        &kp N9             &kp KP_MINUS     &trans
 &trans        &none         &trans      &trans      &trans    &trans                                                  &kp PRCNT  &kp NUMBER_4      &kp N5        &kp NUMBER_6       &trans           &none
