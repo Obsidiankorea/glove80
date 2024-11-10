@@ -151,8 +151,8 @@
             bindings = <&kp X>, <&kp NUMBER_3>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RSFT)>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_LALT|MOD_LGUI)>;
         };
     };
 
