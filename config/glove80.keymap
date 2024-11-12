@@ -416,6 +416,11 @@
             bindings = <&kp LA(LCTRL)>;
             key-positions = <58 60>;
         };
+
+        numlock {
+            bindings = <&kp KP_NUMLOCK>;
+            key-positions = <50 49>;
+        };
     };
 
     keymap {
