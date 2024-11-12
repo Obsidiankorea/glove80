@@ -70,7 +70,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <48 49 50 38 37 36 24 25 26 14 13 12 51 39 27 15 69 52 53 70 16 17 18 19 20 28 29 30 31 32 40 41 42 43 44 58 59 60 61 62 46>;
+            hold-trigger-key-positions = <48 49 50 38 37 36 24 25 26 14 13 12 51 39 27 15 69 52 53 70 16 17 18 19 20 28 29 30 31 32 40 41 42 43 44 58 59 60 61 62 46 73 74>;
             bindings = <&kp>, <&kp>;
         };
 
