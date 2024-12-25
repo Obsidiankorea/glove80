@@ -136,16 +136,6 @@
             tapping-term-ms = <300>;
         };
 
-        V_3: V_3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "V_3";
-            bindings = <&kp V>, <&kp NUMBER_3>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI|MOD_LSFT)>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT)>;
-        };
-
         x_3: x_3 {
             compatible = "zmk,behavior-mod-morph";
             label = "X_3";
@@ -198,13 +188,6 @@
             #binding-cells = <0>;
             bindings = <&kp N &kp J>;
             label = "RIGHT_NJ";
-        };
-
-        date_now: date_now {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LG(LS(SEMICOLON)))>;
-            label = "DATE_NOW";
         };
     };
 
