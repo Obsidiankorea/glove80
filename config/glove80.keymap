@@ -303,12 +303,12 @@
         };
 
         ctrlz {
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp RG(Z)>;
             key-positions = <38 36>;
         };
 
         ctrlshiftt {
-            bindings = <&kp LC(LS(T))>;
+            bindings = <&kp LS(RG(T))>;
             key-positions = <24 26 13>;
         };
 
@@ -343,7 +343,7 @@
         };
 
         rightcrw {
-            bindings = <&kp LG(LA(LEFT_CONTROL))>;
+            bindings = <&kp LG(LEFT_CONTROL)>;
             key-positions = <58 59>;
         };
 
@@ -393,12 +393,12 @@
         };
 
         ctrl_v {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp RG(V)>;
             key-positions = <37 50>;
         };
 
         ctrlx {
-            bindings = <&kp LC(X)>;
+            bindings = <&kp RG(X)>;
             key-positions = <26 13>;
         };
 
@@ -430,6 +430,11 @@
         underbar {
             bindings = <&kp UNDERSCORE>;
             key-positions = <38 37>;
+        };
+
+        Copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <38 25>;
         };
     };
 
